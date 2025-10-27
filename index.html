@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>YouCode School - Classroom Void | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        /* start main  */
+        .section .title h1,
+        .section .title h2,
+        .section .title p {
+            text-align: center;
+        }
+
+        .section .title h1 {
+            color: #888888;
+            font-size: 1.5rem;
+        }
+
+        .section .title h2 {
+            color: #333333;
+            font-weight: 900;
+            font-size: 1.5rem;
+        }
+
+        .section .title p {
+            margin: 0 35%;
+            margin-bottom: 5%;
+        }
+
+        .section_cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .section_cards .second_cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card_one,
+        .card_three,
+        .card_four,
+        .card_two {
+            background: #fff;
+            box-shadow: 0 0 2px 2px #00000092;
+            padding: 20px 10px;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .card_one img,
+        .card_three img,
+        .card_four img,
+        .card_two img {
+            float: right;
+        }
+
+        .card_one h3,
+        .card_three h3,
+        .card_four h3,
+        .card_two h3 {
+            font-weight: 500;
+            color: #545353;
+        }
+
+        .card_one p,
+        .card_three p,
+        .card_four p,
+        .card_two p {
+            font-weight: 500;
+            color: #939191;
+        }
+
+        .card_one {
+            border-top: 4px solid rgb(0, 217, 255);
+        }
+
+        .card_three {
+            border-top: 4px solid red;
+        }
+
+        .card_four {
+            border-top: 4px solid rgb(217, 255, 0);
+        }
+
+        .card_two {
+            border-top: 4px solid rgb(51, 0, 255);
+        }
+
+        /* end main */
+
+        /* start footer */
+        .attribution {
+            margin-top: 20px;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+
+        /* end footer */
+        /* start media */
+        @media (max-width: 768px) {
+            html {
+                overflow-x: hidden !important;
+            }
+
+            .section_cards {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .section .title p {
+                margin: 0 15%;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            html {
+                overflow-x: hidden !important;
+            }
+
+            .section_cards {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .section .title p {
+                margin: 0 10%;
+            }
+        }
+
+        /* end media */
+    </style>
+</head>
+
+<body>
+
+    <main class="main">
+        <section class="section">
+            <div class="title">
+                <h1>Reliable, efficient delivery</h1>
+                <h2>Powered by Technology</h2>
+                <p>
+                    Our Artificial Intelligence powered tools use millions of project data points
+                    to ensure that your project is successful
+                </p>
+            </div>
+            <div class="section_cards">
+                <!-- card one  -->
+                <div class="card_one">
+                    <div>
+                        <h3> Supervisor</h3>
+                    </div>
+                    <div>
+                        <p> Monitors activity to identify project roadblocks</p>
+                    </div>
+                    <div>
+                        <img src="images/icon-supervisor.svg" alt="supervisor">
+                    </div>
+                </div>
+                <div class="second_cards">
+                    <!-- card three  -->
+                    <div class="card_three">
+                        <div>
+                            <h3>Team Builder</h3>
+                        </div>
+                        <div>
+                            <p>Regularly evaluates our talent to ensure quality</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-team-builder.svg" alt="team">
+                        </div>
+                    </div>
+                    <!-- card four  -->
+                    <div class="card_four">
+                        <div>
+                            <h3>Calculator</h3>
+                        </div>
+                        <div>
+                            <p>Uses data from past projects to provide better delivery estimates</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-calculator.svg" alt="calculator">
+                        </div>
+                    </div>
+                </div>
+                <!-- card two  -->
+                <div class="card_two">
+                    <div>
+                        <h3>Karma</h3>
+                    </div>
+                    <div>
+                        <p>Regularly evaluates our talent to ensure quality</p>
+                    </div>
+                    <div>
+                        <img src="images/icon-karma.svg" alt="karma">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p class="attribution">
+            Coded by <a href="#">Your Name Here</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
